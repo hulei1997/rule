@@ -3,8 +3,17 @@
 # 跑裸核用户请自行去掉下方控制面板模块的注释。
 # 机场订阅
 proxy-providers:
-  Airport1:
-    url: "机场订阅填到这里，两端引号不要去掉，不要填写到下方链接里去！！"
+  Airporthx:
+    url: "http://43.139.213.75:9000/hxyunvip?token=cb46098467ca1d5c05893778c00fe119"
+    type: http
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    proxy: 直连
+  Airportnb:
+    url: "https://zhuzhuzhu.whtjdasha.com/api/v1/client/subscribe?token=061bede2e898a58fc84700b53e9402da"
     type: http
     interval: 86400
     health-check:
